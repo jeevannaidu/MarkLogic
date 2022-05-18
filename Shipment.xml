@@ -1,0 +1,315 @@
+<export><workspace name="Shipment"><query name="shipment_1" focus="false" listorder="1" taborder="1" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+xdmp:document-insert(
+  "/shipment_1.xml",
+  &lt;shipment_details xmlns="shipments"&gt;
+	&lt;shipment_id&gt;ALEP998&lt;/shipment_id&gt;
+	&lt;shipment_description&gt;From Alibaba Enterprice&lt;/shipment_description&gt;
+	&lt;shipment_delevery_address&gt;Visakhapatnam Port&lt;/shipment_delevery_address&gt;
+	&lt;shipment_weight weight="kg"&gt;&lt;/shipment_weight&gt;
+	&lt;shipment_status&gt;Delivered&lt;/shipment_status&gt;
+	&lt;shipment_created_time&gt;{fn:current-date()}&lt;/shipment_created_time&gt;
+	&lt;shipment_modified_time&gt;{fn:current-date()}&lt;/shipment_modified_time&gt;
+	&lt;shipment_order_details category="FRAGILE AND FURNITURE"&gt;
+		&lt;order_id&gt;OD009&lt;/order_id&gt;
+		&lt;order_description&gt;Electronics and Antiques&lt;/order_description&gt;
+		&lt;order_delevery_address&gt;MVP Colony&lt;/order_delevery_address&gt;
+		&lt;order_delevery_date_time&gt;{fn:current-date()}&lt;/order_delevery_date_time&gt;
+		&lt;order_status&gt;Delivered&lt;/order_status&gt;
+		&lt;order_count&gt;5&lt;/order_count&gt;
+		&lt;order_amount&gt;463500&lt;/order_amount&gt;
+		&lt;order_details&gt;
+			&lt;item_id&gt;1001
+				&lt;item_description&gt;Mini Particle Accelerator&lt;/item_description&gt;
+				&lt;item_type&gt;Tech&lt;/item_type&gt;
+				&lt;item_price&gt;250000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;250&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;1002
+				&lt;item_description&gt;Tachion Enchanser&lt;/item_description&gt;
+				&lt;item_type&gt;Tech&lt;/item_type&gt;
+				&lt;item_price&gt;100000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;300&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;1003&lt;/item_id&gt;
+				&lt;item_description&gt;Magic Cube&lt;/item_description&gt;
+				&lt;item_type&gt;Old Antique&lt;/item_type&gt;
+				&lt;item_price&gt;50000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;100&lt;/item_weight&gt;
+			&lt;item_id&gt;1004&lt;/item_id&gt;
+				&lt;item_description&gt;IPhone 14 pro-max(GOLD EDITION)&lt;/item_description&gt;
+				&lt;item_type&gt;Tech&lt;/item_type&gt;
+				&lt;item_price&gt;13500&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;100&lt;/item_weight&gt;
+			&lt;item_id&gt;1005&lt;/item_id&gt;
+				&lt;item_description&gt;Floating Board&lt;/item_description&gt;
+				&lt;item_type&gt;Tech&lt;/item_type&gt;
+				&lt;item_price&gt;50000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;250&lt;/item_weight&gt;
+		&lt;/order_details&gt;
+		&lt;order_id&gt;OD010&lt;/order_id&gt;
+		&lt;order_description&gt;Furniture&lt;/order_description&gt;
+		&lt;order_delevery_address&gt;MVP Colony&lt;/order_delevery_address&gt;
+		&lt;order_delevery_date_time&gt;&lt;/order_delevery_date_time&gt;
+		&lt;order_status&gt;Delivered&lt;/order_status&gt;
+		&lt;order_count&gt;5&lt;/order_count&gt;
+		&lt;order_amount&gt;46000&lt;/order_amount&gt;
+		&lt;order_details&gt;
+			&lt;item_id&gt;2001
+				&lt;item_description&gt;Poratble Sofaset&lt;/item_description&gt;
+				&lt;item_type&gt;Furniture&lt;/item_type&gt;
+				&lt;item_price&gt;21000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;50&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;2002
+				&lt;item_description&gt;Erganomic Table&lt;/item_description&gt;
+				&lt;item_type&gt;Furniture&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;2003
+				&lt;item_description&gt;Erganomic Chair&lt;/item_description&gt;
+				&lt;item_type&gt;Furniture&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;2004
+				&lt;item_description&gt;Foldable Side tables&lt;/item_description&gt;
+				&lt;item_type&gt;Furniture&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;10&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;2005
+				&lt;item_description&gt;Plastic chairs(100)&lt;/item_description&gt;
+				&lt;item_type&gt;Furniture&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;30&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+		&lt;/order_details&gt;
+	&lt;/shipment_order_details&gt;
+&lt;/shipment_details&gt;
+,
+    &lt;options xmlns="xdmp:document-insert"&gt;
+      &lt;collections&gt;
+        &lt;collection&gt;Shipment&lt;/collection&gt;
+      &lt;/collections&gt;
+    &lt;/options&gt;
+), "Updated shipment_1 successfully"
+</query><query name="shipment_2" focus="false" listorder="2" taborder="7" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+xdmp:document-insert(
+"/shipment_2.xml",
+&lt;shipment_details xmlns="shipments"&gt;
+	&lt;shipment_id&gt;ALEP999&lt;/shipment_id&gt;
+	&lt;shipment_description&gt;From Alibaba Enterprice&lt;/shipment_description&gt;
+	&lt;shipment_delevery_address&gt;Mumbai Port&lt;/shipment_delevery_address&gt;
+	&lt;shipment_weight weight="kg"&gt;&lt;/shipment_weight&gt;
+	&lt;shipment_status&gt;Delivered&lt;/shipment_status&gt;
+	&lt;shipment_created_time&gt;{current-date()}&lt;/shipment_created_time&gt;
+	&lt;shipment_modified_time&gt;{fn:current-date()}&lt;/shipment_modified_time&gt;
+	&lt;shipment_order_details category="TOYS"&gt;
+		&lt;order_id&gt;OD011&lt;/order_id&gt;
+		&lt;order_description&gt;TOYS&lt;/order_description&gt;
+		&lt;order_delevery_address&gt;Bandra&lt;/order_delevery_address&gt;
+		&lt;order_delevery_date_time&gt;{fn:current-date()}&lt;/order_delevery_date_time&gt;
+		&lt;order_status&gt;Delivered&lt;/order_status&gt;
+		&lt;order_count&gt;5&lt;/order_count&gt;
+		&lt;order_amount&gt;46000&lt;/order_amount&gt;
+		&lt;order_details&gt;
+			&lt;item_id&gt;3001
+				&lt;item_description&gt;Optimus Prime(5 feet)&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;7&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;3002
+				&lt;item_description&gt;Helicopter&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;10000&lt;/item_price&gt;
+				&lt;item_status&gt;Delevered&lt;/item_status&gt;
+				&lt;item_weight&gt;0.5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;3003
+				&lt;item_description&gt;Fly Buddy&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;15000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;0.5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;3004
+				&lt;item_description&gt;Monster Truck&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;1&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;3005
+				&lt;item_description&gt;Kitchen set&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+		&lt;/order_details&gt;
+		&lt;order_id&gt;OD012&lt;/order_id&gt;
+		&lt;order_description&gt;TOYS&lt;/order_description&gt;
+		&lt;order_delevery_address&gt;Marine Beach&lt;/order_delevery_address&gt;
+		&lt;order_delevery_date_time&gt;&lt;/order_delevery_date_time&gt;
+		&lt;order_status&gt;Delevered&lt;/order_status&gt;
+		&lt;order_count&gt;5&lt;/order_count&gt;
+		&lt;order_amount&gt;463500&lt;/order_amount&gt;
+		&lt;order_details&gt;
+			&lt;item_id&gt;4001
+				&lt;item_description&gt;Baby shower Tub&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;25000&lt;/item_price&gt;
+				&lt;item_status&gt;Delevered&lt;/item_status&gt;
+				&lt;item_weight&gt;30&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;4002
+				&lt;item_description&gt;Boxing KIT&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;10000&lt;/item_price&gt;
+				&lt;item_status&gt;Delevered&lt;/item_status&gt;
+				&lt;item_weight&gt;5&lt;/item_weight&gt;
+			&lt;/item_id&gt;
+			&lt;item_id&gt;4003&lt;/item_id&gt;
+				&lt;item_description&gt;Barbie Dolls and Kit&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;5000&lt;/item_price&gt;
+				&lt;item_status&gt;Delevered&lt;/item_status&gt;
+				&lt;item_weight&gt;5&lt;/item_weight&gt;
+			&lt;item_id&gt;4004&lt;/item_id&gt;
+				&lt;item_description&gt;Power Boat&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;10000&lt;/item_price&gt;
+				&lt;item_status&gt;Delivered&lt;/item_status&gt;
+				&lt;item_weight&gt;10&lt;/item_weight&gt;
+			&lt;item_id&gt;4005&lt;/item_id&gt;
+				&lt;item_description&gt;Rocket&lt;/item_description&gt;
+				&lt;item_type&gt;TOY&lt;/item_type&gt;
+				&lt;item_price&gt;20000&lt;/item_price&gt;
+				&lt;item_status&gt;Delevered&lt;/item_status&gt;
+				&lt;item_weight&gt;10&lt;/item_weight&gt;
+		&lt;/order_details&gt;
+	&lt;/shipment_order_details&gt;
+&lt;/shipment_details&gt;
+,
+&lt;options xmlns="xdmp:document-insert"&gt;
+      &lt;collections&gt;
+        &lt;collection&gt;Shipment&lt;/collection&gt;
+      &lt;/collections&gt;
+    &lt;/options&gt;
+),"Updated shipment_2 successfully"</query><query name="order_amount &gt;10000" focus="false" listorder="5" taborder="8" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Get all the order details:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+//sh:order_id[sh:order_amount &gt; 10000]
+</query><query name="item_weight &lt; 1" focus="false" listorder="6" taborder="5" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+for $orders in fn:doc()//sh:order_details/sh:item_id[sh:item_weight &lt; 1]
+
+return $orders
+</query><query name="sort_by_item_price" focus="false" listorder="7" taborder="1" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+declare namespace o = "shipments";
+
+for $items in //o:item_id
+  let $item_price :=  xs:double($items//o:item_price/text())
+  order by $item_price
+return $items</query><query name="shipment weight" focus="false" listorder="3" taborder="4" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Updating shipment weight by adding item weights:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+for $shipments in fn:doc() 
+  let $items_weight := sum(xs:double($shipments//sh:item_weight))
+return xdmp:node-replace($shipments//sh:shipment_details/sh:shipment_weight, &lt;shipment_weight&gt;{$items_weight}&lt;/shipment_weight&gt;) , "Shipment weight updated"
+</query><query name="OrderDeliverd TImeAndDate" focus="false" listorder="12" taborder="5" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+declare namespace o = "shipments";
+
+xdmp:node-replace(fn:doc()//o:order_delevery_date_time, &lt;order_delevery_date_time&gt;{current-dateTime()}&lt;/order_delevery_date_time&gt;)</query><query name="OrderDetails from Shipment" focus="false" listorder="4" taborder="3" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Get all the order details:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+//sh:order_details</query><query name="Status" focus="false" listorder="9" taborder="8" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">xquery version "1.0-ml";
+
+declare namespace s ="shipments";
+
+for $doc in fn:doc()
+let $shipmentid := $doc//s:shipment_id
+
+return 
+for $o in $doc//s:shipment_order_details
+let $orderid :=$o//s:order_id
+let $orderstatus := $o//s:order_status
+return &lt;a&gt;{$shipmentid,$orderid,$orderstatus}&lt;/a&gt;</query><query name="Count of Delivered Orders In Shipment" focus="false" listorder="11" taborder="4" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Count of all orders which are delivered:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+for $doc in fn:doc()
+  let $shipment := $doc//sh:shipment_id
+  let $count := count($doc//sh:order_id) 
+  
+ return  if($doc//sh:order_status = "Delivered" ) then ($shipment,$count) else()
+  
+</query><query name="Last 2 days" focus="false" listorder="8" taborder="5" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Delivered within Last 2 days:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+for $doc in fn:doc()
+return  if(fn:days-from-duration(fn:current-date() - xs:date($doc//sh:order_delevery_date_time/text())) lt 2) then ($doc//sh:order_details) else()</query><query name="Same Delivery Address" focus="false" listorder="13" taborder="6" active="false" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Same Delivery Address in a Shipment:)
+
+xquery version "1.0-ml";
+declare namespace o = "shipments";
+
+for $doc in fn:doc()
+let $shipmentid := $doc//o:shipment_id
+return
+for $d in distinct-values($doc//o:order_delevery_address/text())
+where 1 &lt; count($doc//o:order_delevery_address[text() = $d])
+return
+&lt;deliver&gt;
+{$shipmentid}
+&lt;/deliver&gt;</query><query name="Date Formatter" focus="false" listorder="14" taborder="7" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Date formatter:)
+
+xquery version "1.0-ml";
+
+declare function local:convert($datetime as xs:dateTime)
+{
+format-dateTime(xs:dateTime($datetime), "[M01]/[D01]/[Y0001] [H01]:[m01]:[s01]")
+};
+
+local:convert(fn:current-dateTime())
+</query><query name="Orders Count" focus="false" listorder="10" taborder="14" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Count of all orders:)
+xquery version "1.0-ml";
+
+declare namespace sh = "shipments";
+
+for $doc in fn:doc()
+  let $shipment := $doc//sh:shipment_id
+  let $count := count($doc//sh:order_id) 
+ 
+return($shipment,$count) 
+  
+</query><query name="Query 1" focus="true" listorder="15" taborder="15" active="true" database="1317273423496095910" server="3955399406552708558" database-name="shipment" server-name="App-Services" mode="xquery" optimize="1">(:Interval:)
+xquery version "1.0-ml";
+</query></workspace></export>
